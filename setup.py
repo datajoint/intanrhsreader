@@ -3,8 +3,9 @@ from os import path
 from setuptools import setup, find_packages
 
 
-pkg_name = next(p for p in find_packages() if "." not in p)
+pkg_name = "intanrhsreader"
 here = path.abspath(path.dirname(__file__))
+print(here)
 
 with open(path.join(here, "README.md"), "r") as f:
     long_description = f.read()
@@ -12,7 +13,7 @@ with open(path.join(here, "README.md"), "r") as f:
 with open(path.join(here, "requirements.txt")) as f:
     requirements = f.read().splitlines()
 
-with open(path.join(here, pkg_name, "version.py")) as f:
+with open(path.join(here, "version.py")) as f:
     exec(f.read())
 
 setup(
