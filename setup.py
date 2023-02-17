@@ -24,7 +24,7 @@ setup(
     long_description_content_type="text/markdown",
     author="DataJoint",
     author_email="info@datajoint.com",
-    license="MIT",
+    license="GPLv3.0",
     url=f'https://github.com/datajoint/{pkg_name.replace("_", "-")}',
     keywords="neuroscience science datajoint intan rhs reader",
     packages=find_packages(exclude=["contrib", "docs", "tests*"]),
