@@ -4,7 +4,7 @@
 
 `COPYING` is renamed to `LICENSE` for clarity.
 
-## To load a single rhs file:
+### To load a single rhs file:
 
 ```python
 from intanrhsreader import load_file
