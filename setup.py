@@ -5,7 +5,6 @@ from setuptools import setup, find_packages
 
 pkg_name = "intanrhsreader"
 here = path.abspath(path.dirname(__file__))
-print(here)
 
 with open(path.join(here, "README.md"), "r") as f:
     long_description = f.read()
