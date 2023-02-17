@@ -10,3 +10,4 @@ Observes [Semantic Versioning](https://semver.org/spec/v2.0.0.html) standard and
 - LoadIntanRHS_Python.ipynb file is removed from the repository.
 - present is removed from the return line of "load_file" function.
 - Added header information to the results dictionary in "data_to_result" function.
+- "importrhsutilities.py" is blackified.
