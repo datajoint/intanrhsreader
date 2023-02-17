@@ -18,7 +18,7 @@ with open(path.join(here, "version.py")) as f:
 setup(
     name=pkg_name.replace("_", "-"),
     version=__version__,
-    description="Intan rhs single data reader",
+    description="Intan single rhs file data reader",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="DataJoint",
