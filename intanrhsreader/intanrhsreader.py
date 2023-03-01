@@ -821,17 +821,16 @@ def load_file(filename, run_notch=True):
 
         # If the software notch filter was selected during the recording, apply the
         # same notch filter to amplifier data here.
-        if header["notch_filter_frequency"] > 0 and header["version"]["major"] < 3:
-            if run_notch:
-                print_increment = 10
-                percent_done = print_increment
-                for i in range(header["num_amplifier_channels"]):
-                    data["amplifier_data"][i, :] = notch_filter(
-                        data["amplifier_data"][i, :], header["sample_rate"], header["notch_filter_frequency"], 10
-                    )
-                    if fraction_done >= percent_done:
-                        print("{}% done...".format(percent_done))
-                        percent_done = percent_done + print_increment
+        if header["notch_filter_frequency"] > 0 and header["version"]["major"] < 3 and run_notch:
+            print_increment = 10
+            percent_done = print_increment
+            for i in range(header["num_amplifier_channels"]):
+                data["amplifier_data"][i, :] = notch_filter(
+                    data["amplifier_data"][i, :], header["sample_rate"], header["notch_filter_frequency"], 10
+                )
+                if fraction_done >= percent_done:
+                    print("{}% done...".format(percent_done))
+                    percent_done = percent_done + print_increment
     else:
         data = []
 
