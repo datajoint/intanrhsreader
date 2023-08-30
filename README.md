@@ -6,7 +6,7 @@
 pip install git+https://github.com/datajoint/intanrhsreader.git
 ```
 
-## Read a single rhs file
+## Read a single RHS file
 
 ```python
 from intanrhsreader import load_file
