@@ -1,17 +1,15 @@
-# Intan RHS Single File Data Loader
+# Intan RHS Single File Data Reader
 
-
-### Intall the package directly from this repo by running:
+## Install the package
 
 ```bash
 pip install git+https://github.com/datajoint/intanrhsreader.git
 ```
 
-
-### To load a single rhs file:
+## Read a single rhs file
 
 ```python
 from intanrhsreader import load_file
 
-rhsdata = load_file("<filepath>")
+rhs_data = load_file("<filepath>")
 ```
