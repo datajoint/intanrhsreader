@@ -12,4 +12,4 @@ Observes [Semantic Versioning](https://semver.org/spec/v2.0.0.html) standard and
 - Update - Rename `importrhsutilities.py` to `intanrhsreader.py`
 - Update - Black format `intanrhsreader.py`
 - Update - In `intanrhsreader.py` and the `load_file` function, remove the `data_present` variable from the return statement
-- Add - In `intanrhsreader.py` and the `data_to_result` function, add header information to the `result` dictionary
+- Add - In `intanrhsreader.py` and the `data_to_result` function, add all header information to the `result` dictionary
